@@ -1,0 +1,10 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+body{@apply bg-ink text-cream font-sans antialiased}
+@layer components{
+.card{@apply rounded-xl border border-white/10 bg-panel p-5}
+.input{@apply w-full rounded-lg border border-white/10 bg-ink px-3 py-2.5 text-sm outline-none transition focus:border-gold}
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-lg bg-gold px-4 py-2.5 text-sm font-semibold text-ink transition hover:brightness-110 disabled:opacity-50}
+.btn-ghost{@apply inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 px-4 py-2.5 text-sm transition hover:bg-white/5 disabled:opacity-50}
+.lbl{@apply mb-1 block text-xs uppercase tracking-wider text-cream/60}
+}
